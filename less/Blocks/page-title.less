@@ -1,0 +1,26 @@
+.page-title {
+	position: relative;
+	padding-bottom: 45px;
+	font-size: 36px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.page-title::after {
+	position: absolute;
+	left:50%;
+	bottom: 0;
+	width: 240px;
+	height: 22px;
+	margin-left: -120px;
+	content: "";
+	background-repeat: no-repeat;
+}
+
+.page-title.about__title {
+	display: block;
+	color: #C90;
+}
+.page-title.about__title::after {
+	background: url("../../../img/divider.png");
+	background-repeat: no-repeat;
+}
