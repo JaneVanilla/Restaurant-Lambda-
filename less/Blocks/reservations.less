@@ -32,25 +32,35 @@
 	    -webkit-justify-content: space-around;
 	            justify-content: space-around;
 	}
-	.reservations__img:first-child {
-	display: inline-block;
-    }
+	
     .reservations__content {
-    	-webkit-flex-basis: 40%;
-    	        flex-basis: 40%;
+    	-webkit-flex-basis: 60%;
+    	        flex-basis: 60%;
     }
     .reservations__img-block {
-    	display: flex;
-    	margin-top: -20px;
-    }
-    .reservations__img {
     	-webkit-flex-basis: 40%;
     	        flex-basis: 40%;
-        padding: 2%;
+        margin-top: 100px;
+    }
+    .reservations__img {
+    
     }
 }
 @media (min-width: 1200px) {
 	.reservations {
 		padding: 100px 0;
 	}
+	.reservations__img:first-child,
+	.reservations__img {
+	display: inline-block;
+}
+    .reservations__content {
+    	-webkit-flex-basis: 50%;
+    	        flex-basis: 50%;
+    }
+     .reservations__img-block {
+    	-webkit-flex-basis: 60%;
+    	        flex-basis: 60%;
+    	width: 100px;
+    }
 }
