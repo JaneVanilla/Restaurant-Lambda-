@@ -1,0 +1,56 @@
+.reservations {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: url("../img/aboutBg.jpg");
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.reservations__block {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.reservations__img-block {
+	margin-top: 40px;
+	text-align: center;
+}
+.reservations__img:first-child {
+	display: none;
+}
+.reservations__text {
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.reservations__block {
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	    -webkit-justify-content: space-around;
+	            justify-content: space-around;
+	}
+	.reservations__img:first-child {
+	display: inline-block;
+    }
+    .reservations__content {
+    	-webkit-flex-basis: 40%;
+    	        flex-basis: 40%;
+    }
+    .reservations__img-block {
+    	display: flex;
+    	margin-top: -20px;
+    }
+    .reservations__img {
+    	-webkit-flex-basis: 40%;
+    	        flex-basis: 40%;
+        padding: 2%;
+    }
+}
+@media (min-width: 1200px) {
+	.reservations {
+		padding: 100px 0;
+	}
+}
